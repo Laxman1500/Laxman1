@@ -11,4 +11,4 @@ EC2Instance:
           DeviceName: /dev/sda1
           Ebs:
             VolumeSize: 2
-        
+        -- hai github --
