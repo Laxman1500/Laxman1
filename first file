@@ -5,6 +5,6 @@
     image: ami-123456
     wait: yes
     group: webserver
-    count: 3
+    count: 2
     vpc_subnet_id: subnet-29e63245
     assign_public_ip: yes
