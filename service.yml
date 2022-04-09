@@ -2,6 +2,7 @@ AWSTemplateFormatVersion: 2010-09-09
 Description: Part 1 - Build a webapp stack with CloudFormation
  # hi hello jenkins--
  # hello
+ # good
 Resources:
   WebAppInstance:
     Type: AWS::EC2::Instance
