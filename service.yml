@@ -22,7 +22,7 @@
       "ConstraintDescription": "must be a valid IP CIDR range of the form x.x.x.x/x."
    }
   },
-	"Resources" : {
+    "Resources" : {
     "EC2Instance" : {
       "Type" : "AWS::EC2::Instance",
       "Properties" : {
@@ -47,7 +47,7 @@
       }
     }
   },
-	"Outputs" : {
+    "Outputs" : {
     "InstanceId" : {
       "Description" : "InstanceId of the newly created EC2 instance",
       "Value" : { "Ref" : "EC2Instance" }
