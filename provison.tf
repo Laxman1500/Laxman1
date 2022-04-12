@@ -1,4 +1,4 @@
-Provison "ec2_instance" {
+Provison "aws_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 3.0"
 
