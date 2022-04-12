@@ -1,11 +1,18 @@
-provider "aws" {
-  profile    = "default"
-  region     = "us-east-1"
-}
+resource "aws_iam_role" "eks_cluster" {
+ name = "eks-cluster"
+ assume_role_policy = <<POLICY
+ {
+ "Version": "2012-10-17",
+ "Statement": [
+ {
+ "Effect": "Allow",
+ "Principal": {
+ "Service": "eks.amazonaws.com"
+ },
+ "Action": "sts:AssumeRole"
+ }
+ ]
+ }
+ POLICY
+ }
 
-resource "aws_instance" "example" {
-  ami           = "ami-2757f631"
-  instance_type = "t2.micro"
-}
-
-  
