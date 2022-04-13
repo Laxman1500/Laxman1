@@ -1,4 +1,4 @@
-provider "aws" {
+provider "aws_instance" {
   profile    = "Ubuntu"
   region     = "us-east-1"
 }
