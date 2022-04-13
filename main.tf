@@ -7,4 +7,5 @@ resource "aws_instance" "MyFirstInstance" {
   tags = {
     Name = "Terraform_ec2"
   }
+}
   
